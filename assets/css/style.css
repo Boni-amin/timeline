@@ -1,0 +1,61 @@
+.main{
+    padding: 25px 0;
+}
+.main h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: tomato;
+    margin-bottom: 60px;
+}
+.single-area{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.single-area::after{
+    content: '';
+    width: 3px;
+    height: 100%;background-color: tomato;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.single-area li{
+    width: 45%;
+    border: 1px solid tomato;
+    list-style: none;
+    float: left;
+    display: table;
+    clear: both;
+    margin-bottom: 50px;
+    position: relative;
+}
+.single-area li::after, .single-area li:nth-child(even)::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: tomato;
+    position: absolute;
+    top: 50%;
+    right: -13.5%;
+}
+.single-area li:nth-child(even)::before{
+    left: -13.5%;
+}
+.single-area li:nth-child(even){
+    float: right;
+    text-align: right;
+}
+
+.sigle{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 50px 5px 20px;
+}
+.sigle h5{
+    font-weight: 700;
+    font-size: 18px;
+    color: tomato;
+}
